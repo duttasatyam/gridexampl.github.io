@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 350px 350px;
+                grid-template-rows: 150px;
+            }
+
+            body{
+                color:white;
+                font-family: 'open sans', sans-serif;
+                font-size: 20px;
+                text-align: center;
+                line-height: 2;
+            }
+
+            .item-1{
+                grid-column: 1/4;
+                background-color: red;
+                
+            }
+
+            .item-2{
+                grid-row: 2/4;
+                background-color:black;
+            }
+
+
+            .item-3{
+                grid-column: 2/4;
+                background-color: black;
+            }
+            
+
+            .item-4{
+                grid-column: 2/3;
+                background-color: black;
+            }
+
+            .item-5{
+                background-color: black;
+            }
+
+            .footer{
+                grid-column: 1/5;
+                background-color: #2C3043;
+            }
+
+            @media only screen and(max-width:1000px){
+                .container{
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                .item-2{
+                    grid-column: 1/3;
+                    grid-row: 4/5;
+                }
+
+                .item-3{
+                    grid-column: 1/3;
+                }
+                .item-4{
+                    grid-column: 1/2;
+                }
+                .item-5{
+                    grid-column: 2/3;
+                }
+            }
+
+           nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 40px;
+            padding-left: 10%;
+            padding-right: 10%;
+            float: right;
+           }
+
+           nav ul li{
+            display: inline-block;
+            list-style-type: none;
+            padding: 10px 20px;
+            
+
+           }
+
+           nav ul li a{
+            color: aliceblue;
+            text-decoration: none;
+            font-weight: bold;
+            
+           }
+           nav ul li a:hover{
+            color: blue;
+           }
+           
+         #s{
+            width:100%;
+           padding: 50px 20px;
+
+         }
+
+         #a{
+            width: 100%;
+            padding:50px 40px ;
+         }
+
+         #t{
+            width:100% ;
+            padding:50px 40px ;
+         }
+        </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        
+        <div class="item item-1"> 
+            <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">GALLERY</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </nav>
+            
+        </div>
+        
+        <div class="item item-2"> <img src="https://thumbs.dreamstime.com/b/autumn-forest-nature-vivid-morning-colorful-forest-sun-rays-branches-trees-scenery-nature-sunlight-105116502.jpg" id="s"></div>
+
+        <div class="item item-3"> <p>A rainforest is an area of tall, mostly evergreen trees and a high amount of rainfall.
+
+            Rainforests are Earth’s oldest living ecosystems, with some surviving in their present form for at least 70 million years.</p></div>
+        
+        <div class="item item-4"> <img src="https://img.freepik.com/premium-photo/colorful-wild-flowers-forest-02_3510-3442.jpg?w=2000" id="a"></div>
+
+        <div class="item item-5"> <img src="https://c8.alamy.com/comp/2DF6KEA/elephant-hedge-bean-tree-or-forest-boer-bean-schotia-latifolia-is-a-tree-with-edible-seeds-native-to-southern-africa-fruits-legumes-and-leaves-2DF6KEA.jpg" id="t"></div>
+
+        <div class="item footer"> <p>A forest is a complex ecological system in which trees are the dominant life-form. A forest is nature's most efficient ecosystem, with a high rate of photosynthesis affecting both plant and animal systems in a series of complex organic relationships.</p></div>
+
+    </div>
+    
+</body>
+</html>
